@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stellar-tx-inspector"
+version = "0.1.0"
+description = "Read-only inspection of Stellar transaction envelope XDR"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "stellar-sdk>=16,<17",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8",
+]
+
+[project.scripts]
+stellar-tx-inspect = "stellar_tx_inspector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
