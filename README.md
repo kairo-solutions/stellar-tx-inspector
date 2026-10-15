@@ -5,6 +5,8 @@ transaction envelope and summarizing its network-specific hash, source account,
 sequence, fee, signatures, and operation types. It uses the official
 `stellar-sdk` XDR parser; it does not submit transactions or need secret keys.
 
+[**Read the documentation**](https://kairo-solutions.github.io/stellar-tx-inspector/)
+
 ## Install and use
 
 Requires Python 3.10 or newer.
